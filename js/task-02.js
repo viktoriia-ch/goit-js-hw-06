@@ -8,7 +8,6 @@ const ingredients = [
 ];
 
 const node = ingredients.map((ingredient) => {
-  
   const listEl = document.createElement('li');
   listEl.textContent = ingredient;
 

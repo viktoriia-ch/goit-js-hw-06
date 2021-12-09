@@ -14,7 +14,7 @@ const images = [
 ];
 
 const createPictureGalleryMarkup = objects => {
-  return `<li> <img src = '${objects.url}' alt = '${objects.alt}' width = '450'/>
+  return `<li class='gallery__item'> <img src = '${objects.url}' alt = '${objects.alt}' width = '350'/>
   </li>`
 }
 
@@ -22,4 +22,5 @@ const gallery = document.getElementById('gallery');
 const createGalleryItems = images.map(createPictureGalleryMarkup).join('');
 
 gallery.insertAdjacentHTML('beforeend', createGalleryItems)
+
 console.log(gallery)
