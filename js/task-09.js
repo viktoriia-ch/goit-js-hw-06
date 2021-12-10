@@ -8,6 +8,7 @@ const refs = {
 };
 
 refs.btnEl.addEventListener('click', function () {
-  document.body.style.backgroundColor = getRandomHexColor();
-  refs.spanEl.textContent = getRandomHexColor();
+  let colorEl = getRandomHexColor();
+  document.body.style.backgroundColor = colorEl;
+  refs.spanEl.textContent = colorEl;
 });
